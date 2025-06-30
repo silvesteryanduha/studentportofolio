@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog / Pengalaman Kerja</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+    <a href="blog.html">Blog</a>
+  </nav>
+  <h1>Pengalaman Kerja / Blog</h1>
+  <input type="text" id="searchInput" placeholder="Cari...">
+  <button onclick="addBlog()"><i class="fas fa-plus"></i> Tambah</button>
+  <div id="blogList"></div>
+
+  <div id="blogForm" style="display:none;">
+    <input id="blogTitle" placeholder="Judul Pengalaman">
+    <textarea id="blogDesc" placeholder="Deskripsi"></textarea>
+    <button onclick="saveBlog()">Simpan</button>
+    <button onclick="cancel()">Batal</button>
+  </div>
+
+  <script src="js/blog.js"></script>
+</body>
+</html>
